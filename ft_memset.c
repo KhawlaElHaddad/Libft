@@ -1,13 +1,13 @@
 #include <stdio.h>
-void *memset(void *s, int c, size_t n)
+void *ft_memset(void *s, int c, size_t n)
 {
-    int i = 0;
+    size_t i = 0;
     
     char k = (char) c;
     unsigned char *str = (unsigned char *)s;
     while(i < n)
     {
-        str[i] = k[i];
+        str[i] = k;
         i++;
     }
     return(s);

@@ -16,7 +16,7 @@ int occ_c(char *str, int a)
 
 char *ft_strchr(const char *s, int c)
 {
-    int i = 0;
+    //int i = 0;
     char *str = (char *) s;
     int occ = occ_c(str, c);
 
@@ -31,7 +31,7 @@ char *ft_strchr(const char *s, int c)
 int main()
 {
     char *str = "lala khawxla";
-    int c = 'x';
+    int c = 'a';
     char *res = ft_strchr(str, c);
     printf("%s\n",res);
 }

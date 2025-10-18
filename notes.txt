@@ -1,3 +1,4 @@
 1- how does typecasting work.
 2- size_t meaning.
 3. memmove.
+4. memchr.
