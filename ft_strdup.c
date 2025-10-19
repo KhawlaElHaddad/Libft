@@ -1,5 +1,41 @@
-char *strdup(const char *s)
+#include <stdio.h>
+size_t ft_strln(const char *str)
 {
     int i = 0;
+    while (str[i])
+    {
+        i++;
+    }
+    return (i);
+}
+#include <stdlib.h>
+char *ft_strdup(const char *s)
+{
+    int i = 0;
+    char *t = (char*)malloc(sizeof(char) * ft_strln(s) + 1);
+    if(!t)
+    {
+        return (NULL);
+    }
+    while (s[i])
+    {
+        t[i] = s[i];
+        i++;
+    }
+    t[i] = '\0';
+    return(t);
     
+}
+#include <string.h>
+
+int main()
+{
+    char source[] = "GeeksForGeeks";
+
+    // A copy of source is created dynamically
+    // and pointer to copy is returned.
+    char* target = ft_strdup(source); 
+
+    printf("%s", target);
+    return 0;
 }
