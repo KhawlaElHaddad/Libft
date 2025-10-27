@@ -12,6 +12,8 @@ size_t ft_strln(const char *str)
 char *ft_strdup(const char *s)
 {
     int i = 0;
+    if(!s)
+        return (NULL);
     char *t = (char*)malloc(sizeof(char) * ft_strln(s) + 1);
     if(!t)
     {
@@ -30,12 +32,13 @@ char *ft_strdup(const char *s)
 
 int main()
 {
-    char source[] = "GeeksForGeeks";
+    char *source = "KHawla ra2i3a jidan wa jamila";
 
     // A copy of source is created dynamically
     // and pointer to copy is returned.
     char* target = ft_strdup(source); 
 
     printf("%s", target);
+    free(target);
     return 0;
 }
