@@ -13,12 +13,12 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     return (dest);
 }
 
-// #include <string.h>
+#include <string.h>
 
-// int main()
-// {
-//     char *str="lalla khawla zwin ";
-//     char src[10] = "hamza zwin";
-//     ft_memcpy(src, str, sizeof(src));
-//     printf("%s\n", src);
-// }
+int main()
+{
+    char *str="lalla khawla zwin ";
+    char src[10] = "hamza zwin";
+    ft_memcpy(src, str, sizeof(src));
+    printf("%s\n", src);
+}
